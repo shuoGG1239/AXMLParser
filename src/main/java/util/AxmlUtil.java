@@ -1,5 +1,7 @@
 package util;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
@@ -12,12 +14,15 @@ import java.io.InputStream;
  * Created by shuoGG on 2018/7/27
  */
 public class AxmlUtil {
+
+    private static final Log logger = LogFactory.getLog(AxmlUtil.class);
+
     public static String parse(String fileUrl) {
         AXML2String axml = new AXML2String();
         try {
             return axml.parse(fileUrl);
         } catch (IOException | XmlPullParserException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         return null;
     }
@@ -27,7 +32,7 @@ public class AxmlUtil {
         try {
             return axml.parse(in);
         } catch (IOException | XmlPullParserException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         return null;
     }
@@ -37,7 +42,7 @@ public class AxmlUtil {
         try {
             return axml.parse(in);
         } catch (IOException | XmlPullParserException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         return null;
     }

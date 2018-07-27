@@ -29,24 +29,24 @@ import java.io.InputStream;
  * 封装了下AXMLPrinter
  * Created by shuoGG on 2018/7/27
  */
-public class AXML2String {
+class AXML2String {
     private StringBuilder result = new StringBuilder();
 
-    public String parse(String filePath) throws IOException, XmlPullParserException {
+    String parse(String filePath) throws IOException, XmlPullParserException {
         AXmlResourceParser parser = new AXmlResourceParser();
         parser.open(new FileInputStream(filePath));
         dealParser(parser);
         return result.toString();
     }
 
-    public String parse(InputStream in) throws IOException, XmlPullParserException {
+    String parse(InputStream in) throws IOException, XmlPullParserException {
         AXmlResourceParser parser = new AXmlResourceParser();
         parser.open(in);
         dealParser(parser);
         return result.toString();
     }
 
-    public String parse(byte[] in) throws IOException, XmlPullParserException {
+    String parse(byte[] in) throws IOException, XmlPullParserException {
         AXmlResourceParser parser = new AXmlResourceParser();
         parser.open(new ByteArrayInputStream(in));
         dealParser(parser);
@@ -101,7 +101,6 @@ public class AXML2String {
                 }
             }
         }
-        System.out.println(result.toString());
     }
 
     private String getNamespacePrefix(String prefix) {
