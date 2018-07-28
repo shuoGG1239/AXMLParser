@@ -8,7 +8,7 @@ AxmlUtil.parse(String fileUrl);
 AxmlUtil.parse(InputStream in);
 AxmlUtil.parse(byte[] in);
 ```
-<br>  
+<br>
 
 # Example
 ```java
@@ -18,4 +18,4 @@ public static void main(String[] args) {
     System.out.println(content);
 }
 ```
-<br>  
+<br>
