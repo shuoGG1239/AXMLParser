@@ -3,10 +3,11 @@
 <br>
 
 # API
+* 直接使用AxmlUtil下的静态方法即可
 ```java
-AxmlUtil.parse(String fileUrl);
-AxmlUtil.parse(InputStream in);
-AxmlUtil.parse(byte[] in);
+String parse(String fileUrl);
+String parse(InputStream in);
+String parse(byte[] in);
 ```
 <br>
 
@@ -14,7 +15,7 @@ AxmlUtil.parse(byte[] in);
 ```java
 public static void main(String[] args) {
     String axmlPath = "./resource/AndroidManifest.xml";
-    String content = AxmlUtil.parse(axmlPath);
+    String content = AxmlUtil.parse(axmlPath); // content即为明文
     System.out.println(content);
 }
 ```
