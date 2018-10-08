@@ -1,4 +1,4 @@
-package org.xmlpull.v1;
+package com.shuo.xmlpull.v1;
 
 import java.io.IOException;
 import java.io.OutputStream;

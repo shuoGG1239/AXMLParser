@@ -1,7 +1,7 @@
 /* -*-             c-basic-offset: 4; indent-tabs-mode: nil; -*-  //------100-columns-wide------>|*/
 // for license please see accompanying LICENSE.txt file (available also at http://www.xmlpull.org/)
 
-package org.xmlpull.v1;
+package com.shuo.xmlpull.v1;
 
 import java.io.InputStream;
 import java.util.Enumeration;
@@ -16,7 +16,7 @@ import java.util.Vector;
  * and its class used for loading (no class loader - on J2ME no access to context class loaders)
  * must be passed explicitly. If no name of parser factory was passed (or is null)
  * it will try to find name by searching in CLASSPATH for
- * META-INF/services/org.xmlpull.v1.XmlPullParserFactory resource that should contain
+ * META-INF/services/com.shuo.xmlpull.v1.XmlPullParserFactory resource that should contain
  * a comma separated list of class names of factories or parsers to try (in order from
  * left to the right). If none found, it will throw an exception.
  *
@@ -44,18 +44,18 @@ public class XmlPullParserFactory {
     /** Name of the system or midlet property that should be used for
      a system property containing a comma separated list of factory
      or parser class names (value:
-     org.xmlpull.v1.XmlPullParserFactory). */
+     com.shuo.xmlpull.v1.XmlPullParserFactory). */
 
 
     public static final String PROPERTY_NAME =
-        "org.xmlpull.v1.XmlPullParserFactory";
+        "com.shuo.xmlpull.v1.XmlPullParserFactory";
 
     private static final String RESOURCE_NAME =
         "/META-INF/services/" + PROPERTY_NAME;
 
 
     // public static final String DEFAULT_PROPERTY =
-    //    "org.xmlpull.xpp3.XmlPullParser,org.kxml2.io.KXmlParser";
+    //    "com.shuo.xmlpull.xpp3.XmlPullParser,org.kxml2.io.KXmlParser";
 
 
     protected Vector parserClasses;

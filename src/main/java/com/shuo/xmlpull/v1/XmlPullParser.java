@@ -1,7 +1,7 @@
 /* -*-             c-basic-offset: 4; indent-tabs-mode: nil; -*-  //------100-columns-wide------>|*/
 // for license please see accompanying LICENSE.txt file (available also at http://www.xmlpull.org/)
 
-package org.xmlpull.v1;
+package com.shuo.xmlpull.v1;
 
 import java.io.InputStream;
 import java.io.IOException;
@@ -73,9 +73,9 @@ import java.io.Reader;
  * import java.io.IOException;
  * import java.io.StringReader;
  *
- * import org.xmlpull.v1.XmlPullParser;
- * import org.xmlpull.v1.<a href="XmlPullParserException.html">XmlPullParserException.html</a>;
- * import org.xmlpull.v1.<a href="XmlPullParserFactory.html">XmlPullParserFactory</a>;
+ * import com.shuo.xmlpull.v1.XmlPullParser;
+ * import com.shuo.xmlpull.v1.<a href="XmlPullParserException.html">XmlPullParserException.html</a>;
+ * import com.shuo.xmlpull.v1.<a href="XmlPullParserFactory.html">XmlPullParserFactory</a>;
  *
  * public class SimpleXmlPullApp
  * {
